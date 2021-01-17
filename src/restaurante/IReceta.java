@@ -15,5 +15,5 @@ package restaurante;
  * @author Santiago Apreza Robin Miguel
  */
 public interface IReceta {
-
+    abstract String getInfo();
 }

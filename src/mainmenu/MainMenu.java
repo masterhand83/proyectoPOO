@@ -12,6 +12,7 @@ package mainmenu;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import restaurante.RestauranteData;
 
 /**
  *
@@ -19,13 +20,19 @@ import java.util.Scanner;
  */
 public class MainMenu {
     private boolean isProcessActive;
-    private SubMenu menuList;
+    private SubMenu menuList,
+                    menuPedido,
+                    registerRepartidor,
+                    registerPlatillo,
+                    registerDatosPersonales;
+    
+    
     public MainMenu(){
         isProcessActive = true;
-        
+        menuList = new MenuList();
     }
     public void process(){
-        
+        RestauranteData data = new RestauranteData();
         int i = 0;
         while(isProcessActive){
             System.out.println(mainMenuHeader());
@@ -34,6 +41,7 @@ public class MainMenu {
             String res = s.nextLine();
             switch(res){
                 case "1":
+                    menuList.process(data);
                 break;
                 case "2":
                 break;

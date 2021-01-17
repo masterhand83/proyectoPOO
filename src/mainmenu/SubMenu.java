@@ -17,5 +17,5 @@ import restaurante.RestauranteData;
  * @author Santiago Apreza Robin Miguel
  */
 abstract class SubMenu {
-    abstract boolean process(RestauranteData data);    
+    abstract void process(RestauranteData data);    
 }

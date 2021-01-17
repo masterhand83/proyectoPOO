@@ -10,10 +10,55 @@
 
 package restaurante;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Santiago Apreza Robin Miguel
  */
 public class RestauranteData {
-
+    private Restaurante restaurante;
+    private ArrayList<Repartidor> repartidores;
+    
+    public RestauranteData(){
+        restaurante = new Restaurante();
+        repartidores = new ArrayList<>();
+        
+    }
+    
+    public void addRepartidor(Repartidor r){
+        this.repartidores.add(r);
+    }
+    
+    public void addPlatillo(IReceta re){
+        this.restaurante.addReceta(re);
+    }
+    
+    public void addPedido(Pedido p){
+        this.restaurante.addPedido(p);
+    }
+    
+    public ArrayList<IReceta> getPlatillos(){
+      return this.restaurante.getRecetas();
+    }
+    
+    public ArrayList<Pedido> getPedidos(){
+        return this.restaurante.getPedidos();
+    }
+    
+    public String getRepartidorList(){
+        if (this.repartidores.size() <= 0){
+            return "NO HAY REPARTIDORES";
+        }
+        String res = "";
+        for(int i = 0; i < this.repartidores.size(); i++){
+            Persona p = this.repartidores.get(i);
+            res += String.valueOf(i)+". "+ p.getInfo();
+        }
+        return res;
+    }
+    
+    public Repartidor getRepartidor(int i){
+        return this.repartidores.get(i);
+    }
 }

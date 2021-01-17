@@ -16,4 +16,9 @@ package restaurante;
  */
 public class Repartidor extends Persona {
 
+    @Override
+    String getInfo() {
+        return "";
+    }
+
 }

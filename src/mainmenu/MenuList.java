@@ -8,12 +8,19 @@
  * [Uso y proposito de la clase]
  */
 
-package restaurante;
+package mainmenu;
+
+import restaurante.RestauranteData;
 
 /**
  *
  * @author Santiago Apreza Robin Miguel
  */
-public abstract class Persona {
-    abstract String getInfo();
+public class MenuList extends SubMenu{
+
+    @Override
+    void process(RestauranteData data) {
+        
+    }
+
 }

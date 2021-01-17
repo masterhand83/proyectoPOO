@@ -16,4 +16,9 @@ package restaurante;
  */
 public class Comida implements IReceta {
 
+    @Override
+    public String getInfo() {
+        return "";
+    }
+
 }

@@ -16,4 +16,9 @@ package restaurante;
  */
 public class Cliente extends Persona {
 
+    @Override
+    String getInfo() {
+        return "cliente";
+    }
+
 }
