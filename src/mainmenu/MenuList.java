@@ -10,6 +10,8 @@
 
 package mainmenu;
 
+import java.util.ArrayList;
+import restaurante.IReceta;
 import restaurante.RestauranteData;
 
 /**
@@ -20,7 +22,13 @@ public class MenuList extends SubMenu{
 
     @Override
     void process(RestauranteData data) {
-        
+        ArrayList<IReceta> recetas = data.getPlatillos();
+        if (recetas.size() <= 0){
+            System.out.println("Sin platillos");
+        }
+        for (IReceta r: recetas){
+            
+        }
     }
 
 }

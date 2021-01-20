@@ -58,7 +58,27 @@ public class RestauranteData {
         return res;
     }
     
+    public String getPlatilloList(){
+        ArrayList<IReceta> platillos = getPlatillos();
+        if (platillos.size() <= 0){
+            return "NO HAY REPARTIDORES";
+        }
+        String res = "";
+        for(int i = 0; i < platillos.size(); i++){
+            IReceta r = platillos.get(i);
+            res += String.valueOf(i)+". "+ r.getInfo();
+        }
+        return res;
+    }
+
+    public ArrayList<Repartidor> getRepartidores() {
+        return repartidores;
+    }
+    
     public Repartidor getRepartidor(int i){
         return this.repartidores.get(i);
+    }
+    public IReceta getReceta(int i){
+        return this.getPlatillos().get(i);
     }
 }

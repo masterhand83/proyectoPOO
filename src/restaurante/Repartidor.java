@@ -15,10 +15,38 @@ package restaurante;
  * @author Santiago Apreza Robin Miguel
  */
 public class Repartidor extends Persona {
-
+    private String medioTransporte;
+    private String tiempoTardanza;
+    private int calificacion;
+    
     @Override
     String getInfo() {
         return "";
     }
 
+    public String getMedioTransporte() {
+        return medioTransporte;
+    }
+
+    public void setMedioTransporte(String medioTransporte) {
+        this.medioTransporte = medioTransporte;
+    }
+
+    public String getTiempoTardanza() {
+        return tiempoTardanza;
+    }
+
+    public void setTiempoTardanza(String tiempoTardanza) {
+        this.tiempoTardanza = tiempoTardanza;
+    }
+
+    public int getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(int calificacion) {
+        this.calificacion = calificacion;
+    }
+
+    
 }

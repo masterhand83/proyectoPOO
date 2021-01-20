@@ -8,18 +8,21 @@
  * [Uso y proposito de la clase]
  */
 
-package restaurante;
+package mainmenu;
+
+import java.util.Scanner;
+import restaurante.Repartidor;
+import restaurante.RestauranteData;
 
 /**
  *
  * @author Santiago Apreza Robin Miguel
  */
-public class Bebida implements IReceta {
-    private String nombre;
-    private double precio;
+public class RegisterRepartidor extends SubMenu {
     @Override
-    public String getInfo() {
-        return "";
+    void process(RestauranteData data) {
+        Scanner s = new Scanner(System.in);
+        Repartidor r = new Repartidor();
     }
 
 }

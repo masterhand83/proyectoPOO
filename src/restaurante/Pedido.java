@@ -17,7 +17,55 @@ import java.util.ArrayList;
  * @author Santiago Apreza Robin Miguel
  */
 public class Pedido {
-    private Persona clientes;
-    private ArrayList<Persona> repartidor;
-    private ArrayList<IReceta> receta;
+    private String domicilio;
+    private String metodoPago;
+    private Persona cliente;
+    private Persona repartidor;
+    private ArrayList<IReceta> platillos;
+    
+    
+
+    public Persona getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Persona cliente) {
+        this.cliente = cliente;
+    }
+
+    public Persona getRepartidor() {
+        return repartidor;
+    }
+
+    public void setRepartidor(Persona repartidor) {
+        this.repartidor = repartidor;
+    }
+
+    public ArrayList<IReceta> getPlatillos() {
+        return platillos;
+    }
+
+    public void setPlatillos(ArrayList<IReceta> platillos) {
+        this.platillos = platillos;
+    }
+
+    public String getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
+    }
+
+    public String getMetodoPago() {
+        return metodoPago;
+    }
+
+    public void setMetodoPago(String metodoPago) {
+        this.metodoPago = metodoPago;
+    }
+    
+    
+    
+    
 }

@@ -88,6 +88,19 @@ public class Restaurante {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+    
     
     
 

@@ -30,6 +30,9 @@ public class MainMenu {
     public MainMenu(){
         isProcessActive = true;
         menuList = new MenuList();
+        menuPedido = new MenuPedido();
+        registerRepartidor = new RegisterRepartidor();
+        
     }
     public void process(){
         RestauranteData data = new RestauranteData();
@@ -44,6 +47,7 @@ public class MainMenu {
                     menuList.process(data);
                 break;
                 case "2":
+                    menuPedido.process(data);
                 break;
                 case "3":
                 break;
