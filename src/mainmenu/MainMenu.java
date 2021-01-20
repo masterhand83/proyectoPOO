@@ -67,6 +67,7 @@ public class MainMenu {
                     System.out.println("Elige una respuesta valida");
                 break;
             }
+            s.close();
             
         }
     }

@@ -19,7 +19,7 @@ public class Comida implements IReceta {
     private double precio;
     @Override
     public String getInfo() {
-        return "";
+        return "producto: "+ nombre + ", precio: "+String.valueOf(precio) + "$\n";
     }
 
     public String getNombre() {

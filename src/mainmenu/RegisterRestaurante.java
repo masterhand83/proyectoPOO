@@ -10,6 +10,7 @@
 
 package mainmenu;
 
+import java.util.Scanner;
 import restaurante.RestauranteData;
 
 /**
@@ -20,7 +21,14 @@ public class RegisterRestaurante extends SubMenu {
 
     @Override
     void process(RestauranteData data) {
-        
+        Scanner s = new Scanner(System.in);
+        System.out.println("Anota El nombre del restaurante");
+        data.setNombre(s.nextLine());
+        System.out.println("Anota la direccion del restaurante");
+        data.setDireccion(s.nextLine());
+        System.out.println("Anota el telefono del restaurante");
+        data.setTelefono(s.nextLine());
+        s.close();
     }
 
 }

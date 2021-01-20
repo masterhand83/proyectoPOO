@@ -19,7 +19,7 @@ public class Bebida implements IReceta {
     private double precio;
     @Override
     public String getInfo() {
-        return "";
+        return "producto: "+ nombre + ", precio: "+String.valueOf(precio) + "$\n";
     }
 
     public String getNombre() {
@@ -29,6 +29,15 @@ public class Bebida implements IReceta {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+    
     
     
 }

@@ -26,6 +26,18 @@ public class RestauranteData {
         
     }
     
+    public void setNombre(String nombre) {
+        restaurante.setNombre(nombre);
+    }
+
+    public void setDireccion(String direccion) {
+        restaurante.setDireccion(direccion);
+    }
+
+    public void setTelefono(String telefono) {
+        restaurante.setTelefono(telefono);
+    }
+    
     public void addRepartidor(Repartidor r){
         this.repartidores.add(r);
     }
