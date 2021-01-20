@@ -12,7 +12,9 @@ package mainmenu;
 
 import java.util.Scanner;
 import restaurante.Cliente;
+import restaurante.IReceta;
 import restaurante.Pedido;
+import restaurante.Repartidor;
 import restaurante.RestauranteData;
 
 /**
@@ -38,14 +40,26 @@ public class MenuPedido extends SubMenu  {
         Pedido p = new Pedido();
         
         System.out.println("Cual es el nombre del cliente:");
-        
         String cName = s.nextLine();
         Cliente c = new Cliente(cName);
         p.setCliente(c);
+        
+        
         System.out.println("Elige el platillo que desees");
+        System.out.println(data.getPlatilloList());
+        int pChoice = Integer.parseInt(s.nextLine());
+        IReceta pl = data.getReceta(pChoice);
+        
+        p.addPlatillo(pl);
         
         
+        System.out.println("Elige un repartidor:");
+        System.out.println(data.getRepartidorList());
+        int rChoice = Integer.parseInt(s.nextLine());
+        Repartidor r = data.getRepartidor(rChoice);
+        p.setRepartidor(r);
         
+        data.addPedido(p);
         
     }
     

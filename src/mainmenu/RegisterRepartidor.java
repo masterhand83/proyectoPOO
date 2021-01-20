@@ -42,7 +42,6 @@ public class RegisterRepartidor extends SubMenu {
         data.addRepartidor(r);
         
         System.out.println(data.getRepartidorList());
-        s.close();
     }
 
 }

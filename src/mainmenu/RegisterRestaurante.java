@@ -28,7 +28,6 @@ public class RegisterRestaurante extends SubMenu {
         data.setDireccion(s.nextLine());
         System.out.println("Anota el telefono del restaurante");
         data.setTelefono(s.nextLine());
-        s.close();
     }
 
 }

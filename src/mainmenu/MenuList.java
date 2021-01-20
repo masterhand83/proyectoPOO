@@ -25,9 +25,10 @@ public class MenuList extends SubMenu{
         ArrayList<IReceta> recetas = data.getPlatillos();
         if (recetas.size() <= 0){
             System.out.println("Sin platillos");
+            return;
         }
         for (IReceta r: recetas){
-            
+            System.out.println(r.getInfo());
         }
     }
 

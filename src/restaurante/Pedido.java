@@ -65,7 +65,9 @@ public class Pedido {
         this.metodoPago = metodoPago;
     }
     
-    
+    public void addPlatillo(IReceta p){
+        platillos.add(p);
+    }
     
     
 }

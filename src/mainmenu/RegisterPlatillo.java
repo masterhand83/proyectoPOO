@@ -44,7 +44,6 @@ public class RegisterPlatillo extends SubMenu {
                 System.out.println("Elige una opcion valida");
             break;
         }
-        s.close();
     }
     
     private void registrarBebida(Scanner s, RestauranteData data){
