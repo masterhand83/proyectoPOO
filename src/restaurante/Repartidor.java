@@ -21,7 +21,9 @@ public class Repartidor extends Persona {
     
     @Override
     String getInfo() {
-        return "";
+        return "medio de transporte: "+ medioTransporte 
+                + ", tiempo tardanza: " + tiempoTardanza
+                + ", calificacion: "+String.valueOf(calificacion) + "\n";
     }
 
     public String getMedioTransporte() {

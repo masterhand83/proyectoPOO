@@ -24,7 +24,7 @@ public class MainMenu {
                     menuPedido,
                     registerRepartidor,
                     registerPlatillo,
-                    registerDatosPersonales;
+                    registerRestaurante;
     
     
     public MainMenu(){
@@ -32,6 +32,8 @@ public class MainMenu {
         menuList = new MenuList();
         menuPedido = new MenuPedido();
         registerRepartidor = new RegisterRepartidor();
+        registerPlatillo = new RegisterPlatillo();
+        registerRestaurante = new RegisterRestaurante();
         
     }
     public void process(){
@@ -50,10 +52,13 @@ public class MainMenu {
                     menuPedido.process(data);
                 break;
                 case "3":
+                    registerRepartidor.process(data);
                 break;
                 case "4":
+                    registerPlatillo.process(data);
                 break;
                 case "5":
+                    registerRestaurante.process(data);
                 break;
                 case "6":
                     isProcessActive = false;

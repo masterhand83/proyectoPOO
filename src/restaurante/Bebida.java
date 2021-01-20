@@ -22,4 +22,13 @@ public class Bebida implements IReceta {
         return "";
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
 }
