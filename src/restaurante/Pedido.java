@@ -23,7 +23,9 @@ public class Pedido {
     private Persona repartidor;
     private ArrayList<IReceta> platillos;
     
-    
+    public Pedido(){
+        this.platillos = new ArrayList<>();
+    }
 
     public Persona getCliente() {
         return cliente;
